@@ -1,0 +1,10 @@
+.itemContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.container {
+  maring-top: 200px;
+}

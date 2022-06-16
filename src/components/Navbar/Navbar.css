@@ -1,0 +1,30 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8vh;
+  z-index: 1000;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav-ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  width: 100vw;
+  min-height: 8vh;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-ul li a {
+  color: white;
+  text-decoration: none;
+
+  display: flex;
+}

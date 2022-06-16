@@ -1,0 +1,50 @@
+.btnSlide {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  border: 1px solid rgba(34, 34, 34, 0.287);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btnSlide img {
+  width: 25px;
+  height: 25px;
+  pointer-events: none;
+}
+
+.prev {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-60%);
+  z-index: 11;
+}
+.next {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-60%);
+  z-index: 11;
+}
+
+.standardButton {
+  display: flex;
+  padding: 10px 10px;
+  background: crimson;
+  border: white;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+  max-width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.standardButton:active {
+  transform: scale(0.9);
+}

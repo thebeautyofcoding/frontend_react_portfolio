@@ -1,0 +1,186 @@
+.container {
+  position: absolute;
+  top: 60vh;
+  /* left: 70vw; */
+  height: 35vh;
+  width: 25vw;
+  max-width: 200px;
+  z-index: 100;
+  min-width: 200px;
+  position: fixed;
+}
+.box {
+  background: white;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  height: 30px;
+  border-bottom: 1px solid rgba(108, 122, 137, 0.5);
+  background: rgba(108, 122, 137, 0.1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.footer {
+  min-height: 40px;
+  border-bottom: 1px solid rgba(108, 122, 137, 0.5);
+  max-height: 100px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  overflow: hidden;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 80%;
+}
+.textAreaAndButtonContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  height: 2em;
+  overflow-y: hidden;
+}
+.textAreaContainer {
+  background: rgba(108, 122, 137, 0.3);
+  border-radius: 20px;
+  padding: 2px;
+  max-height: 150px;
+  width: 100%;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textInput {
+  width: 100%;
+  border: none;
+  background: transparent;
+  height: 90%;
+  resize: none;
+  overflow-y: hidden;
+
+  outline: none;
+  color: gray;
+}
+.sendButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.sendButtonDisabled {
+  fill: gray;
+}
+
+.sendButton {
+  fill: crimson;
+}
+.messageContainerVisitor {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+.messageContainerBot {
+  display: flex;
+  justify-content: flex-start;
+}
+.messageContainer .messageVisitor {
+  display: inline;
+  justify-content: flex-end;
+}
+.messageContainer .messageBot {
+  display: flex;
+  justify-content: flex-start;
+}
+.messageBot {
+  background: rgba(108, 122, 137, 0.3);
+  border-radius: 15px;
+  padding: 5px;
+  width: 80%;
+  margin: 5px;
+}
+.messageVisitor {
+  background: #1877f2;
+  border-radius: 5px;
+  max-width: 80%;
+  padding: 5px;
+  display: inline-block;
+  color: white;
+  margin: 5px;
+}
+
+.content {
+  height: 70%;
+  overflow-y: auto;
+}
+
+.loadingEnter {
+  opacity: 0;
+}
+.footer {
+}
+.loadingEnterActive {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+.messageEnterDone {
+  opacity: 0;
+}
+.messageEnterActive {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    max-width: 350px;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header h3 {
+  margin: 0;
+  color: gray;
+}
+@media (min-width: 481px) {
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}

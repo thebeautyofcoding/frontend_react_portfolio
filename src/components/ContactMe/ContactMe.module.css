@@ -1,0 +1,116 @@
+label{
+    margin:10px 0px;
+
+}
+input{
+    border:none;
+    outline:none;
+    background:rgba(0,0,0,0.2);
+    border-radius:10px;
+    padding:10px;
+    
+}
+
+textarea{
+    border:none;
+    outline:none;
+    background:rgba(0,0,0,0.2);
+    border-radius:10px;
+    padding:10px;
+}
+
+.h3Container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+.inputContainer{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.container{
+    display:flex;
+    flex-direction:row;
+    margin:0 auto;
+    box-shadow:2px 3px 3px rgba(0,0,0,0.5);
+    border-radius:15px;
+
+    flex-flow: row wrap;
+    max-width:700px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:999;
+    background:white;
+    
+}
+
+.subjectContainer{
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    min-width:200px;
+    width:45%;
+
+}
+.emailContainer{
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    min-width:200px;
+    width:45%;
+
+}
+.messageContainer{
+   
+    display:flex;
+    margin:0 auto;
+    justify-content:center;
+    flex-direction:column;
+    min-width:200px;
+    width:95%;
+   
+
+}
+.messageContainer textarea{
+    resize:none;
+}
+.sendContainer{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+.send{
+    margin:10px;
+    color:white;
+    background:crimson;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    cursor:pointer;
+    box-shadow:2px 3px 3px rgba(0,0,0,0.5);
+    transition: all .2s ease-in-out;
+    
+   
+}
+.send:active{
+    transform:scale(0.7);
+}
+.send:disabled{
+    background:gray;
+    transform:scale(1);
+}
+
+.validationError{
+    color:crimson;
+    margin:5px 0;
+}
+.successMessage{
+    color:green;
+    margin:5px 0;
+}

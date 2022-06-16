@@ -1,0 +1,30 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 20px 0;
+  max-width: 700px;
+}
+
+.container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 10% 50%;
+}
+
+.container .content {
+  width: 90%;
+  color: black;
+}
+
+h2 {
+  margin-top: 200px;
+}

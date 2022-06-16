@@ -1,0 +1,48 @@
+.container {
+  background: red;
+  height: 100%;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  padding: 0px 100px;
+  color: black;
+}
+
+.container .content .title {
+}
+@keyframes animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .container .content {
+    max-width: 200px;
+    word-break: break-word;
+  }
+}
+@media screen and (min-width: 641px) {
+  .container .content {
+    max-width: 400px;
+    word-break: break-word;
+  }
+}

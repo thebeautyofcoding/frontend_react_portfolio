@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  font-weight: 300;
+  overflow: hidden;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  scroll-behavior: smooth;
+}
+h1 {
+  margin: 0;
+}
+.nav-wrapper {
+  height: 100vh;
+}
+
+.brand {
+  margin-left: 20px;
+}
+.brand a {
+  text-decoration: none;
+  width: 100%;
+}
+.brand a h1 {
+  white-space: nowrap;
+  color: white;
+}
+
+.brand h1 .red {
+  color: crimson;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.chat-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.chat-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.chat-exit {
+  opacity: 1;
+}
+.chat-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.email-enter {
+  opacity: 0;
+  transform: translateX(0);
+}
+.email-enter-active {
+  opacity: 1;
+
+  transition: opacity 100ms;
+}
+.email-exit {
+  opacity: 1;
+}
+.email-exit-active {
+  opacity: 0;
+
+  transition: opacity 100ms;
+}
+
+.backdrop-enter {
+  opacity: 0;
+}
+.backdrop-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+
+  transition: opacity 100ms, transform 100ms;
+}
+.backdrop-exit {
+  opacity: 1;
+}
+.backdrop-exit-active {
+  opacity: 0;
+  transform: scale(1);
+
+  transition: opacity 100ms, transform 100ms;
+}
+
+.footerContainer {
+  margin-top: 500px;
+}
